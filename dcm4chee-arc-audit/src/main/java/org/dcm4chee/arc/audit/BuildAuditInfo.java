@@ -113,24 +113,24 @@ class BuildAuditInfo {
             studyUID = val;
             return this;
         }
-        Builder accNum(String val) {
-            accNum = val;
+        Builder patientIDAndName(String[] patientIDAndName) {
+            pID = patientIDAndName[0];
+            pName = patientIDAndName[1];
             return this;
         }
-        Builder pID(String val) {
-            pID = val;
+        Builder studyIUIDDateAndAccNum(String[] studyUIDDateAndAccNum) {
+            studyUID = studyUIDDateAndAccNum[0];
+            studyDate = studyUIDDateAndAccNum[1];
+            accNum = studyUIDDateAndAccNum[2];
             return this;
         }
-        Builder pName(String val) {
-            pName = val;
+        Builder sopCUIDAndIUID(String[] sopCUIDAndIUID) {
+            sopCUID = sopCUIDAndIUID[0];
+            sopIUID = sopCUIDAndIUID[1];
             return this;
         }
         Builder outcome(String val) {
             outcome = val;
-            return this;
-        }
-        Builder studyDate(String val) {
-            studyDate = val;
             return this;
         }
         Builder sopCUID(String val) {
